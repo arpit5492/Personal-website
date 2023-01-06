@@ -106,7 +106,7 @@
 
                         <div class="home__data">
                             <h1 class="home__title">Hi, I am Arpit</h1>
-                            <h3 class="home__subtitle">An enthusiastic technologist</h3>
+                            <h3 class="home__subtitle">An aspiring creative technologist</h3>
                             <p class="home__description">Welcome to my personal website!!</p>
                             <a href="#contact" class="button button--flex home__button">
                                 Contact Me<i class="uil uil-message button__icon"></i>
@@ -824,7 +824,7 @@
 
                         <div>
                             <h3 class="contact__title">Call me</h3>
-                            <span class="contatc__subtitle">+1 (858) 305-8058</span>
+                            <span class="contact__subtitle">+1 (858) 305-8058</span>
                         </div>
                     </div>
 
@@ -833,7 +833,7 @@
 
                         <div>
                             <h3 class="contact__title">E-mail</h3>
-                            <span class="contatc__subtitle">arpitmallick99@gmail.com</span>
+                            <span class="contact__subtitle">amall029@ucr.edu</span>
                         </div>
                     </div>
 
@@ -842,12 +842,12 @@
 
                         <div>
                             <h3 class="contact__title">Location</h3>
-                            <span class="contatc__subtitle">200 W Big Springs Road, Riverside, CA</span>
+                            <span class="contact__subtitle">200 W Big Springs Road, Riverside, CA</span>
                         </div>
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid" onsubmit="Mail(); reset(); return false;">
+                <!-- <form action="" class="contact__form grid" onsubmit="Mail(); reset(); return false;">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
@@ -858,10 +858,10 @@
                             <label for="" class="contact__label">Email</label>
                             <input type="text" class="contact__input" placeholder="Enter your email" id="Email" required>
                         </div>
-                        <!-- <div class="contact__content">
+                        <div class="contact__content">
                             <label for="" class="contact__label">Phone no.</label>
                             <input type="text" class="contact__input" placeholder="Enter your email" id="Phone" required>
-                        </div> -->
+                        </div>
                     </div>
 
                     <div class="contact__content">
@@ -876,14 +876,14 @@
 
                     <div>
                         <button href="#contact" class="button button--flex sndMessage__button">
-                        <!-- <button> -->
-                        <!-- <a href="#contact" class="button button--flex sndMessage__button"> -->
+                        <button>
+                        <a href="#contact" class="button button--flex sndMessage__button">
                             Send message
                             <i class="uil uil-message button__icon"></i>
                         </a>
                         </button>
                     </div>
-                </form>
+                </form> -->
             </div>
 
         </section>
@@ -950,12 +950,12 @@
             let message = document.getElementById("Description").value;
 
             Email.send({
-                SecureToken: "dc4fde7f-2b61-4f95-bf2f-defac56f39b9",
-                // Host : "smtp.elasticemail.com",
-                // Username : "arpitmallick99@gmail.com",
-                // Password : "AA8AEC4B74943330FBE0EF1074641FFA7F0D",
-                To : 'amall029@ucr.edu',
-                From : "arpitlm98@gmail.com",
+                // SecureToken: "dc4fde7f-2b61-4f95-bf2f-defac56f39b9",
+                Host : "smtp.elasticemail.com",
+                Username : "arpitlm89@gmail.com",
+                Password : "27D1BD460F55995EA7F0EA74A51A667F7E0B",
+                To : "amall029@ucr.edu",
+                From : "arpitlm89@gmail.com",
                 Subject : "Mail from my portfolio website",
                 Body : "Name: " + name + "<br/> User Email: " + email + "<br/> Subject: " + subject + "<br/> User message: " + message
             }).then(
